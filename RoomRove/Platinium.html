@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoomRove - Platinium</title>
+    <link rel="icon" href="img/Icono.png">
+
+    <!-- Agregación de Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Agregación de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilos de la pagina completa */
+        body {
+            font-family: "Raleway", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* Estilos de la parte de navegacion */
+        .header {
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .nav a {
+            color: #666;
+        }
+
+        .nav a:hover {
+            color: #F15F79;
+        }
+
+        .title {
+            align-items: center;
+            font-size: 18px;
+            text-align: center;
+            padding: 0px 0px 10px 0px;
+        }
+
+        .container {
+            max-width: 120rem;
+            margin: 0 auto;
+            padding: 0rem 2rem 1rem 2rem;
+        }
+
+        /* Ajustamos estilos de tarjetas */
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 0.7rem;
+            overflow: hidden;
+            position: relative;
+            height: 18rem;
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%; 
+            object-fit: cover;
+        }
+
+        .card__overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            padding: 1rem;
+        }
+
+        .card:hover .card__overlay {
+            opacity: 1;
+        }
+
+        .card__title,
+        .card__description,
+        .card__price {
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .card__title {
+            font-size: 1.5rem;
+        }
+
+        .card__description {
+            font-size: 1rem;
+        }
+
+        .card__price {
+            font-size: 1.2rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar-->
+    <div class="container">
+        <header class="header d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a href="Home.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPUPeou_EsjadPxwdFRzJseDbeEjyknQa-EG5UTw3-_c5sJ1SGjFi7zDsEevCVjGv_-c1moKRgk6BEgvZt5dVhypqVWF8rpmS3lu7bpWzA6vH_APplhC8ydpZQpDBxsoPNAuvgGwfyLGCKjhIv96-GHzQ=w588-h78-s-no-gm?authuser=0" class="bi" width="250" height="38">
+                </a>
+            </div>
+    
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="Home.html" class="nav-link px-2">Home</a></li>
+                <li><a href="Gold.html" class="nav-link px-2">Gold</a></li>
+                <li><a href="Platinium.html" class="nav-link px-2">Platinium</a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" id="search-input" class="form-control form-control-black text-bg-white" placeholder="Buscar..." aria-label="Search">
+            </form>
+    
+            <div class="col-md-3 text-end">
+                <div class="btn-group">
+                    <a href="InicioDeSesion.html"><button type="button" class="btn btn-outline-primary me-2">Iniciar sesion</button></a>
+                    <a href="Registrarse.html"><button type="button" class="btn btn-primary">Registrarse</button></a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Home page content -->
+    <div class="title">
+        <h2>Habitaciones Platinium</h2>
+    </div>
+    <div class="container">
+        <div class="row" id="card-container">
+            <div class="col-lg-6 col-md-12">
+                <a href="Bello.html">
+                    <div class="card">
+                        <img src="img/Bello1.png"
+                            alt="Habitacion 3">
+                        <div class="card__overlay">
+                            <h2 class="card__title">Bello, Colombia</h2>
+                            <p class="card__description">Apartamento ubicado en Cabañas.</p>
+                            <span class="card__price">$300.000/noche</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <a href="Medellin.html">
+                    <div class="card">
+                        <img src="img/Medellin1.png"
+                            alt="Habitacion 4">
+                        <div class="card__overlay">
+                            <h2 class="card__title">Medellin, Colombia</h2>
+                            <p class="card__description">PH ubicado en El Poblado.</p>
+                            <span class="card__price">$280.000/noche</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('search-input');
+        const cardContainer = document.getElementById('card-container');
+        const cards = cardContainer.children;
+      
+        searchInput.addEventListener('input', (e) => {
+          const searchTerm = e.target.value.toLowerCase();
+          for (let i = 0; i < cards.length; i++) {
+            const card = cards[i];
+            const cardTitle = card.querySelector('.card__title').textContent.toLowerCase();
+            if (cardTitle.includes(searchTerm)) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          }
+        });
+    </script>
+
+    <!-- Footer -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 RoomRove, Inc · Privacidad · Términos</p>
+      
+          <a href="Home.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="img/Icono.png" class="bi" width="70" height="60"></img>
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="Home.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="Gold.html" class="nav-link px-2 text-body-secondary">Gold</a></li>
+            <li class="nav-item"><a href="Platinium.html" class="nav-link px-2 text-body-secondary">Platinium</a></li>
+          </ul>
+        </footer>
+      </div>
+
+    <!-- Add Bootstrap and custom JavaScript (replace with your custom.js file) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybB5N8KVkPbFpzVJ0mBbD3yZmNXdXG7IrQBjGzv/UZuXiKWwkI+" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybB5N8KVkPbFpzVJ0mBbD3yZmNXdXG7IrQBjGzv/U9i0KZ+T2eL2o0i3e3722f+nDnXLp7iJUu/Zz1U0Ecw8mgDy" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

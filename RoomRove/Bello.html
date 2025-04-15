@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoomRove - Bello</title>
+    <link rel="icon" href="img/Icono.png">
+
+    <!-- Agregación de Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Agregación de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* Estilos de la pagina completa */
+        body {
+            font-family: "Raleway", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #f5f5f5;
+        }
+
+        /* Estilos de la parte de navegacion */
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link {
+            color: #666666;
+        }
+
+        .nav-link:hover {
+            color: #F15F79;
+        }
+
+        /* Estilos del carrusel */
+        #carouselExampleIndicators {
+            width: 100%;
+            max-width: 1300px;
+            height: auto;
+            max-height: 700px;
+            margin: 0 auto;
+        }
+
+        .carousel-inner {
+            width: 100%;
+            max-height: 700px;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Esto asegura que la imagen cubra el área del carrusel */
+        }
+
+        .review {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .review img {
+            margin-right: 1rem;
+        }
+
+        /* Estilos de fechas de reserva */
+        .reservation-dates {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .reservation-dates .form-group {
+            flex: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar-->
+    <div class="container">
+        <header class="header d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a href="Home.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPUPeou_EsjadPxwdFRzJseDbeEjyknQa-EG5UTw3-_c5sJ1SGjFi7zDsEevCVjGv_-c1moKRgk6BEgvZt5dVhypqVWF8rpmS3lu7bpWzA6vH_APplhC8ydpZQpDBxsoPNAuvgGwfyLGCKjhIv96-GHzQ=w588-h78-s-no-gm?authuser=0" class="bi" width="250" height="38">
+                </a>
+            </div>
+    
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="Home.html" class="nav-link px-2">Home</a></li>
+                <li><a href="Gold.html" class="nav-link px-2">Gold</a></li>
+                <li><a href="Platinium.html" class="nav-link px-2">Platinium</a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" id="search-input" class="form-control form-control-black text-bg-white" placeholder="Buscar..." aria-label="Search">
+            </form>
+    
+            <div class="col-md-3 text-end">
+                <div class="btn-group">
+                    <a href="InicioDeSesion.html"><button type="button" class="btn btn-outline-primary me-2">Iniciar sesion</button></a>
+                    <a href="Registrarse.html"><button type="button" class="btn btn-primary">Registrarse</button></a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Home page content -->
+    <div class="container mt-5">
+        <!-- Galería de imágenes -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Bello1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Bello2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Bello3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Descripción y detalles de la habitación -->
+        <div class="mt-4">
+            <h2 class="fw-bold">Hermosa Habitación en Bello</h2>
+            <p class="text-muted">Ubicación: Bello</p>
+            <p class="lead">Esta hermosa habitación en Bello te ofrece un espacio confortable con todas las comodidades modernas. Ubicada en una zona tranquila, es ideal para una estancia relajante.</p>
+        </div>
+
+        <!-- Información adicional -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h4 class="fw-bold">Detalles de la Habitación</h4>
+                <ul class="list-unstyled">
+                    <li><strong>Precio por noche:</strong> $300.000</li>
+                    <li><strong>Capacidad:</strong> 2 huéspedes</li>
+                    <li><strong>Camas:</strong> 2 cama doble</li>
+                    <li><strong>Baños:</strong> 2 baño privado</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4 class="fw-bold">Servicios</h4>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-wifi"></i> WiFi</li>
+                    <li><i class="fas fa-tv"></i> TV</li>
+                    <li><i class="fas fa-concierge-bell"></i> Servicio de limpieza</li>
+                    <li><i class="fas fa-utensils"></i> Desayuno incluido</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Reseñas -->
+        <div class="mt-4">
+            <h4 class="fw-bold">Reseñas</h4>
+            <div class="review">
+                <img src="img/Persona.png" class="mr-3 rounded-circle" alt="...">
+                <div>
+                    <h5 class="fw-bold mt-0">Laura Bonilla</h5>
+                    <p>Amplia habitación con 2 dormitorios, 2 baños, salón y cocina completa. Decoración elegante, equipamiento de alta gama y servicio personalizado. Ubicación céntrica.</p>
+                </div>
+            </div>
+            <div class="review">
+                <img src="img/Persona.png" class="mr-3 rounded-circle" alt="...">
+                <div>
+                    <h5 class="fw-bold mt-0">Camilo Salazar</h5>
+                    <p>La casa es hermosa y espaciosa, la vista es impresionante. ¡Nos encantó el lugar y repetiríamos la experiencia en cualquier momento!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario de reserva -->
+        <div class="mt-4">
+            <h4 class="fw-bold">Reservar</h4>
+            <div class="reservation-dates">
+                <div class="form-group">
+                    <label for="checkInDate">Fecha de Entrada</label>
+                    <input type="date" class="form-control" id="checkInDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkOutDate">Fecha de Salida</label>
+                    <input type="date" class="form-control" id="checkOutDate" required>
+                </div>
+            </div>
+            <div class="form-group mb-3">
+                <label for="guests">Número de Huéspedes</label>
+                <input type="number" class="form-control" id="guests" min="1" max="2" required>
+            </div>
+            <a href="InicioDeSesion.html">
+                <button type="submit" class="btn btn-primary">Reservar Ahora</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 RoomRove, Inc · Privacidad · Términos</p>
+
+            <a href="Home.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img src="img/Icono.png" class="bi" width="70" height="60"></img>
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="Home.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="Gold.html" class="nav-link px-2 text-body-secondary">Gold</a></li>
+                <li class="nav-item"><a href="Platinium.html" class="nav-link px-2 text-body-secondary">Platinium</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Agregación de Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
